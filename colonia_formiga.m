@@ -10,7 +10,7 @@ function [melhorCaminho custoCaminho]=colonia_formiga()
 
 clear all;
 clc;
-
+%matriz de caminhos
 caminhos=[0 2 9 3 6;...
           2 0 4 3 8;...
           9 4 0 7 3;...
@@ -18,11 +18,12 @@ caminhos=[0 2 9 3 6;...
           6 8 3 3 0];
 
 
-
+%numero de cidades a partir da matrix de caminhos
 numCidades=length(caminhos);
 
+%matriz de feromonio inicializada com peso 1
 matrixFeromonio=ones(numCidades,numCidades);
-
+%variaveis de controle
 alpha=2;
 beta=1;
 numMaxIteracoes=20;

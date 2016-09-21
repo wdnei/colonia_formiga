@@ -1,6 +1,5 @@
 % =========================================================================
-% @desc Algoritmo colonia de formiga para encontrar melhor caminho no problema do
-% caxeiro viajante
+% @desc Atualiza matrix de "feromonio" do algoritmo colonia de formigas
 %
 %Autor: Wdnei Ribeiro da Paixao
 %Disciplina: Inteligencia Artificial

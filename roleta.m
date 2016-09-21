@@ -1,6 +1,6 @@
 % =========================================================================
-% @desc Algoritmo colonia de formiga para encontrar melhor caminho no problema do
-% caxeiro viajante
+% @desc Roleta ou seletor para escolher qual caminho seguir de acordo com a
+% probabilidade
 %
 %Autor: Wdnei Ribeiro da Paixao
 %Disciplina: Inteligencia Artificial
@@ -20,14 +20,13 @@ total_aptidao=sum(f_aptidao);
 aleatorio = rand;
 
 setor = 0;
-%disp('D');
+
 for k = 1 : length(f_aptidao)
     %calcular o valor do setor
     setor = setor + (f_aptidao(k)/total_aptidao);
     %verificar o setor escolhido
     if(setor >= aleatorio)
-        index_selecionado=k;
-        
+        index_selecionado=k;        
         return;
     end
 end
